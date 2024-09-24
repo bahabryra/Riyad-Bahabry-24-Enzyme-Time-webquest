@@ -48,6 +48,18 @@
             margin-top: 40px;
             font-size: 1.2em; /* Larger text for footer */
         }
+        #iframe-container {
+            display: none; /* Initially hide the iframe */
+            margin-top: 20px;
+            border: 1px solid #0d47a1;
+            padding: 10px;
+            background-color: #ffffff; /* White background for the iframe */
+        }
+        iframe {
+            width: 100%;
+            height: 500px; /* Adjust height as necessary */
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -66,7 +78,7 @@
 
 <h2>Task 1: Introduction to Enzymes</h2>
 <p>Discover how enzymes function. Click on the following link to watch the “Enzymes and Pac-Man” video by the Amoeba Sisters. As you watch, answer the questions below. If you don’t have headphones, turn on the closed caption.</p>
-<a href="https://www.youtube.com/watch?v=__INSERT_VIDEO_LINK__" target="_blank">Enzymes (Updated)</a>
+<a href="#" onclick="loadLink('https://www.youtube.com/watch?v=__INSERT_VIDEO_LINK__')">Enzymes (Updated)</a>
 
 <h2>Questions:</h2>
 <ol>
@@ -81,7 +93,7 @@
 
 <h2>Task 2: Enzymatic Virtual Lab Game</h2>
 <p>Click on the link below to play the “Enzymatic” virtual lab video game from the BioMan Biology website. Click “Start a New Game” to begin. Read the screens and follow the directions to complete the game. As you complete the game, answer the following questions on the handout.</p>
-<a href="https://www.biomanbio.com/HTML5GamesandLabs/Enzymes.html" target="_blank">Bioman - Enzymatic</a>
+<a href="#" onclick="loadLink('https://www.biomanbio.com/HTML5GamesandLabs/Enzymes.html')">Bioman - Enzymatic</a>
 
 <p>If class time is running out, you should be able to click on the main menu and then click on “go to score sheet.” Once there, you should be able to click on “save your game!” and enter your email address and a password. This way you don’t have to start over to get your quiz score. If you do not save your game for whatever reason, you MUST start over!</p>
 
@@ -139,9 +151,31 @@
 
 <p class="highlight"><strong>THE END :)</strong></p>
 
+<div id="iframe-container">
+    <iframe id="iframe" src=""></iframe>
+</div>
+
 <footer>
     <p>Designed for educational purposes. Enjoy your learning experience!</p>
 </footer>
+
+<script>
+    function loadLink(url) {
+        var iframeContainer = document.getElementById('iframe-container');
+        var iframe = document.getElementById('iframe');
+
+        // Check if the URL allows iframe embedding
+        iframe.src = url;
+        iframeContainer.style.display = 'block';
+
+        // If the iframe cannot load the URL (for example, due to the X-Frame-Options header)
+        iframe.onload = function() {
+            if (iframe.contentWindow.document.body.innerHTML === "") {
+                window.open(url, '_blank'); // Redirect to a new tab if iframe fails
+            }
+        };
+    }
+</script>
 
 </body>
 </html>
