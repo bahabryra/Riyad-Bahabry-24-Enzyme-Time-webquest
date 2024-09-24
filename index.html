@@ -6,31 +6,47 @@
     <title>Enzyme Time! WebQuest</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e3f2fd; /* Light blue background for a science feel */
+            color: #1a237e; /* Dark blue text */
             line-height: 1.6;
+            padding: 20px;
         }
         h1 {
-            color: #007acc;
+            color: #0d47a1; /* Darker blue for main heading */
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2.5em;
         }
         h2 {
-            color: #005577;
+            color: #1976d2; /* Slightly lighter blue for subheadings */
+            border-bottom: 2px solid #0d47a1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
-        p {
+        p, li {
             margin: 10px 0;
+            font-size: 1.1em; /* Slightly larger text for readability */
         }
-        .gif-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .gif-container img {
-            width: 300px;
-            height: auto;
-            margin: 10px;
+        ul, ol {
+            margin-left: 20px; /* Indentation for lists */
         }
         .highlight {
-            color: #ff4500;
+            color: #ff5722; /* Orange for highlighted text */
+            font-weight: bold;
+        }
+        a {
+            color: #0d47a1; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make links stand out */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.2em; /* Larger text for footer */
         }
     </style>
 </head>
@@ -51,14 +67,6 @@
 <h2>Task 1: Introduction to Enzymes</h2>
 <p>Discover how enzymes function. Click on the following link to watch the “Enzymes and Pac-Man” video by the Amoeba Sisters. As you watch, answer the questions below. If you don’t have headphones, turn on the closed caption.</p>
 <a href="https://www.youtube.com/watch?v=__INSERT_VIDEO_LINK__" target="_blank">Enzymes (Updated)</a>
-
-<div class="gif-container">
-    <img src="https://media.giphy.com/media/3oEjI5tI9J1jT48V6c/giphy.gif" alt="Amoeba Sisters Enzymes GIF">
-    <img src="https://media.giphy.com/media/4oCcr1ckB2UO/giphy.gif" alt="Enzyme Reaction GIF">
-    <img src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif" alt="Science GIF">
-    <img src="https://media.giphy.com/media/2tN5E8JhHfuK4/giphy.gif" alt="Enzyme and Substrate GIF">
-    <img src="https://media.giphy.com/media/1fQ7f3YbV6LaI/giphy.gif" alt="Chemical Reaction GIF">
-</div>
 
 <h2>Questions:</h2>
 <ol>
@@ -113,7 +121,7 @@
     <li>Temperature damage can denature an enzyme permanently. Does extreme pH changes permanently denature an enzyme? Explain.</li>
     <li>What is the optimal pH range of the stomach enzyme pepsin?</li>
     <li>Substrate <span class="highlight">__________</span> refers to the relative amount of substrate in a solution.</li>
-    <li>What does a high substrate concentrate mean?</li>
+    <li>What does a high substrate concentration mean?</li>
     <li>What does a lower substrate concentration mean?</li>
     <li>What is your hypothesis that you typed about substrate concentration and enzyme activity?</li>
     <li>Why is there more enzyme activity at a higher substrate concentration than a lower substrate concentration?</li>
@@ -129,7 +137,11 @@
     <li>Go to the main menu and click on the “Quiz!” tab to take the quiz. What is your score?</li>
 </ol>
 
-<p><strong>THE END :)</strong></p>
+<p class="highlight"><strong>THE END :)</strong></p>
+
+<footer>
+    <p>Designed for educational purposes. Enjoy your learning experience!</p>
+</footer>
 
 </body>
 </html>
