@@ -6,176 +6,137 @@
     <title>Enzyme Time! WebQuest</title>
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #e3f2fd; /* Light blue background for a science feel */
-            color: #1a237e; /* Dark blue text */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
             padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #0d47a1; /* Darker blue for main heading */
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 2.5em;
+        .question {
+            margin: 15px 0;
         }
-        h2 {
-            color: #1976d2; /* Slightly lighter blue for subheadings */
-            border-bottom: 2px solid #0d47a1;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+        .video-link {
+            color: #007bff;
+            text-decoration: none;
         }
-        p, li {
-            margin: 10px 0;
-            font-size: 1.1em; /* Slightly larger text for readability */
-        }
-        ul, ol {
-            margin-left: 20px; /* Indentation for lists */
-        }
-        .highlight {
-            color: #ff5722; /* Orange for highlighted text */
-            font-weight: bold;
-        }
-        a {
-            color: #0d47a1; /* Link color */
-            text-decoration: none; /* Remove underline */
-            font-weight: bold; /* Make links stand out */
-        }
-        a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 1.2em; /* Larger text for footer */
-        }
-        #iframe-container {
-            display: none; /* Initially hide the iframe */
-            margin-top: 20px;
-            border: 1px solid #0d47a1;
-            padding: 10px;
-            background-color: #ffffff; /* White background for the iframe */
+        .video-link:hover {
+            text-decoration: underline;
         }
         iframe {
             width: 100%;
-            height: 500px; /* Adjust height as necessary */
+            height: 600px;
             border: none;
+        }
+        .iframe-container {
+            display: none;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Enzyme Time! WebQuest and Video Game</h1>
+        <h2>Adapted from Ana Ulrich</h2>
+        <p><strong>Prior Knowledge:</strong> In this lesson, you will discover how enzymes help our bodies to break down or build up a specific substrate and catalyze chemical reactions. You will learn how pH, temperature, and concentration affect the rate of chemical reactions in our bodies and will experiment using graphs and interactive games to learn and check your understanding of enzymes.</p>
+        <p><strong>Put your answers in a different color, please!</strong></p>
+        
+        <h3>Learning Targets:</h3>
+        <ul>
+            <li>I can use a model to illustrate the 3-D structure of a protein and relate that structure to the biological function of an enzyme.</li>
+            <li>I can compare the activation energy of an uncatalyzed reaction with an enzyme-mediated reaction using a diagram.</li>
+            <li>I can investigate the factors that affect enzyme function and use that data to draw conclusions about the key components of enzyme functionality in living systems.</li>
+        </ul>
+        
+        <h2>Task 1: Introduction to Enzymes</h2>
+        <p>Discover how enzymes function. Click on the following link to watch the “Enzymes and Pac-Man” video by the Amoeba Sisters: 
+            <a href="#" onclick="loadIframe('video.html');" class="video-link">Enzymes (Updated)</a>
+        </p>
+        
+        <div class="question">
+            <strong>1.</strong> What is the name of the site where the substrate binds to the enzyme? <br>
+            <strong>2.</strong> What is a substrate? <br>
+            <strong>3.</strong> What is induced fit? <br>
+            <strong>4.</strong> How do enzymes change the speed of a chemical reaction? <br>
+            <strong>5.</strong> What two factors can denature enzymes? <br>
+            <strong>6.</strong> How is an enzyme’s shape affected when it becomes denatured? <br>
+            <strong>7.</strong> Why do lactose intolerant people get sick from drinking milk? <br>
+        </div>
 
-<h1>Enzyme Time! WebQuest and Video Game</h1>
-<p><strong>Adapted from Ana Ulrich</strong></p>
+        <h2>Task 2: Enzymatic Virtual Lab Game</h2>
+        <p>Click on the link below to play the “Enzymatic” virtual lab video game from the BioMan Biology website: 
+            <a href="#" onclick="loadIframe('enzymatic_game.html');" class="video-link">Bioman - Enzymatic</a>
+        </p>
 
-<p><strong>Prior Knowledge:</strong> In this lesson, you will discover how enzymes help our bodies to break down or build up a specific substrate and catalyze chemical reactions. You will learn how pH, temperature, and concentration affect the rate of chemical reactions in our bodies, and will experiment using graphs and interactive games to learn and check your understanding of enzymes. <span class="highlight">Put your answers in a different color, please!</span></p>
+        <h3>Part A: What Are Enzymes?</h3>
+        <div class="question">
+            <strong>1.</strong> Enzymes are __________ that speed up or __________ chemical reactions.<br>
+            <strong>2.</strong> Enzymes are important because all living things must do many __________ in order to survive.<br>
+            <strong>3.</strong> The chemical reactions done by living organisms are known as __________.<br>
+            <strong>4.</strong> In biology, the two most important types of reactions are __________ and __________.<br>
+            <strong>5.</strong> __________ is a type of chemical reaction that involves the __________ of polymers into __________.<br>
+            <strong>6.</strong> __________ is a reaction that involves __________ large molecules by joining together building blocks called __________.<br>
+            <strong>7.</strong> Dehydration synthesis happens in your cells when you need to build large molecules such as __________, __________, __________, or __________.<br>
+        </div>
 
-<h2>Learning Targets:</h2>
-<ul>
-    <li>I can use a model to illustrate the 3-D structure of a protein and relate that structure to the biological function of an enzyme.</li>
-    <li>I can compare the activation energy of an uncatalyzed reaction with an enzyme-mediated reaction using a diagram.</li>
-    <li>I can investigate the factors that affect enzyme function and use that data to draw conclusions about the key components of enzyme functionality in living systems.</li>
-</ul>
+        <h3>Part B: Specificity of Enzymes</h3>
+        <div class="question">
+            <strong>8.</strong> Each enzyme has a unique __________ that makes an __________.<br>
+            <strong>9.</strong> Each active site can only fit a specific __________.<br>
+            <strong>10.</strong> When a substrate(s) enters the active site, the enzyme helps a specific __________ to occur. The end result of a chemical reaction is the __________ or __________.<br>
+            <strong>11.</strong> What is the name of the part of the enzyme where the substrate binds and causes a chemical reaction to occur?<br>
+            <strong>12.</strong> We say that enzymes are specific. What does this mean?<br>
+        </div>
 
-<h2>Task 1: Introduction to Enzymes</h2>
-<p>Discover how enzymes function. Click on the following link to watch the “Enzymes and Pac-Man” video by the Amoeba Sisters. As you watch, answer the questions below. If you don’t have headphones, turn on the closed caption.</p>
-<a href="#" onclick="loadLink('https://www.youtube.com/watch?v=qgVFkRn8f10')">Enzymes (Updated)</a>
+        <h3>Part C: Experimenting With Enzymes</h3>
+        <div class="question">
+            <strong>13.</strong> What three factors affect an enzyme’s capability to catalyze chemical reactions?<br>
+            <strong>14.</strong> Use the slider to adjust the temperature to a low (not the lowest) setting. What do you notice about the rate of reaction when the temperature is low?<br>
+            <strong>15.</strong> Use the slider to adjust the temperature to a medium setting. Describe the rate of enzyme activity.<br>
+            <strong>16.</strong> Use the slide to adjust the temperature to the high setting. What happened to your enzyme?<br>
+            <strong>17.</strong> What does becoming “denatured” mean?<br>
+            <strong>18.</strong> What is the temperature that an enzyme works best at called?<br>
+            <strong>19.</strong> What is the optimal temperature of this enzyme?<br>
+            <strong>20.</strong> The __________ is used to tell how acidic or basic a solution is.<br>
+            <strong>21.</strong> Temperature damage can denature an enzyme permanently. Does extreme pH changes permanently denature an enzyme? Explain.<br>
+            <strong>22.</strong> What is the optimal pH range of the stomach enzyme pepsin?<br>
+            <strong>23.</strong> Substrate __________ refers to the relative amount of substrate in a solution.<br>
+            <strong>24.</strong> What does a high substrate concentrate mean?<br>
+            <strong>25.</strong> What does a lower substrate concentration mean?<br>
+            <strong>26.</strong> What is your hypothesis that you typed about substrate concentration and enzyme activity?<br>
+            <strong>27.</strong> Why is there more enzyme activity at a higher substrate concentration than a lower substrate concentration?<br>
+            <strong>28.</strong> Which factors can cause an enzyme to denature?<br>
+        </div>
 
-<h2>Questions:</h2>
-<ol>
-    <li>What is the name of the site where the substrate binds to the enzyme?</li>
-    <li>What is a substrate?</li>
-    <li>What is induced fit?</li>
-    <li>How do enzymes change the speed of a chemical reaction?</li>
-    <li>What two factors can denature enzymes?</li>
-    <li>How is an enzyme’s shape affected when it becomes denatured?</li>
-    <li>Why do lactose-intolerant people get sick from drinking milk?</li>
-</ol>
+        <h3>Part D: Build an Enzyme!</h3>
+        <div class="question">
+            <strong>29.</strong> What is the optimal temperature of your enzyme?<br>
+            <strong>30.</strong> What is the enzyme's optimal substrate concentration?<br>
+            <strong>31.</strong> Observe your machine; describe what did you see.<br>
+            <strong>32.</strong> Go to the main menu and click on the “Quiz!” tab to take the quiz. What is your score?<br>
+        </div>
 
-<h2>Task 2: Enzymatic Virtual Lab Game</h2>
-<p>Click on the link below to play the “Enzymatic” virtual lab video game from the BioMan Biology website. Click “Start a New Game” to begin. Read the screens and follow the directions to complete the game. As you complete the game, answer the following questions on the handout.</p>
-<a href="#" onclick="loadLink('https://www.biomanbio.com/HTML5GamesandLabs/Enzymes.html')">Bioman - Enzymatic</a>
+        <p>THE END :)</p>
 
-<p>If class time is running out, you should be able to click on the main menu and then click on “go to score sheet.” Once there, you should be able to click on “save your game!” and enter your email address and a password. This way you don’t have to start over to get your quiz score. If you do not save your game for whatever reason, you MUST start over!</p>
+        <div class="iframe-container" id="iframe-container">
+            <iframe id="content-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
 
-<h2>Part A: What Are Enzymes?</h2>
-<p>Click on the “What Are Enzymes” tab.</p>
-<ol>
-    <li>Enzymes are <span class="highlight">__________</span> that speed up or <span class="highlight">__________</span> chemical reactions.</li>
-    <li>Enzymes are important because all living things must do many <span class="highlight">__________</span> in order to survive.</li>
-    <li>The chemical reactions done by living organisms are known as <span class="highlight">__________</span>.</li>
-    <li>In biology, the two most important types of reactions are <span class="highlight">__________</span> and <span class="highlight">__________</span>.</li>
-    <li><span class="highlight">__________</span> is a type of chemical reaction that involves the <span class="highlight">__________</span> of polymers into <span class="highlight">__________</span>.</li>
-    <li><span class="highlight">__________</span> is a reaction that involves <span class="highlight">__________</span> large molecules by joining together building blocks called <span class="highlight">__________</span>.</li>
-    <li>Dehydration synthesis happens in your cells when you need to build large molecules such as <span class="highlight">__________</span>, <span class="highlight">__________</span>, <span class="highlight">__________</span>, or <span class="highlight">__________</span>.</li>
-</ol>
-
-<h2>Part B: Specificity of Enzymes</h2>
-<p>Click on the “Specificity” tab.</p>
-<ol>
-    <li>Each enzyme has a unique <span class="highlight">__________</span> that makes an <span class="highlight">__________</span>.</li>
-    <li>Each active site can only fit a specific <span class="highlight">__________</span>.</li>
-    <li>When a substrate(s) enters the active site, the enzyme helps a specific <span class="highlight">__________</span> to occur. The end result of a chemical reaction is the <span class="highlight">__________</span> or <span class="highlight">__________</span>.</li>
-    <li>What is the name of the part of the enzyme where the substrate binds and causes a chemical reaction to occur?</li>
-    <li>We say that enzymes are specific. What does this mean?</li>
-</ol>
-
-<h2>Part C: Experimenting With Enzymes</h2>
-<p>Click on “Experiments” tab.</p>
-<ol>
-    <li>What three factors affect an enzyme’s capability to catalyze chemical reactions?</li>
-    <li>Use the slider to adjust the temperature to a low (not the lowest) setting. What do you notice about the rate of reaction when the temperature is low?</li>
-    <li>Use the slider to adjust the temperature to a medium setting. Describe the rate of enzyme activity.</li>
-    <li>Use the slide to adjust the temperature to the high setting. What happened to your enzyme?</li>
-    <li>What does becoming “denatured” mean?</li>
-    <li>What is the temperature that an enzyme works best at called?</li>
-    <li>What is the optimal temperature of this enzyme?</li>
-    <li>The <span class="highlight">__________</span> is used to tell how acidic or basic a solution is.</li>
-    <li>Temperature damage can denature an enzyme permanently. Does extreme pH changes permanently denature an enzyme? Explain.</li>
-    <li>What is the optimal pH range of the stomach enzyme pepsin?</li>
-    <li>Substrate <span class="highlight">__________</span> refers to the relative amount of substrate in a solution.</li>
-    <li>What does a high substrate concentration mean?</li>
-    <li>What does a lower substrate concentration mean?</li>
-    <li>What is your hypothesis that you typed about substrate concentration and enzyme activity?</li>
-    <li>Why is there more enzyme activity at a higher substrate concentration than a lower substrate concentration?</li>
-    <li>Which factors can cause an enzyme to denature?</li>
-</ol>
-
-<h2>Part D: Build an Enzyme!</h2>
-<ol>
-    <li>What is the optimal temperature of your enzyme?</li>
-    <li>What is the optimal pH?</li>
-    <li>What is the enzyme's optimal substrate concentration?</li>
-    <li>Observe your machine; describe what you see.</li>
-    <li>Go to the main menu and click on the “Quiz!” tab to take the quiz. What is your score?</li>
-</ol>
-
-<p class="highlight"><strong>THE END :)</strong></p>
-
-<div id="iframe-container">
-    <iframe id="iframe" src=""></iframe>
-</div>
-
-<footer>
-    <p>Designed for educational purposes. Enjoy your learning experience!</p>
-</footer>
-
-<script>
-    function loadLink(url) {
-        var iframeContainer = document.getElementById('iframe-container');
-        var iframe = document.getElementById('iframe');
-
-        // Check if the URL allows iframe embedding
-        iframe.src = url;
-        iframeContainer.style.display = 'block';
-
-        // If the iframe cannot load the URL (for example, due to the X-Frame-Options header)
-        iframe.onload = function() {
-            if (iframe.contentWindow.document.body.innerHTML === "") {
-                window.open(url, '_blank'); // Redirect to a new tab if iframe fails
-            }
-        };
-    }
-</script>
-
+    <script>
+        function loadIframe(page) {
+            document.getElementById('content-frame').src = page;
+            document.getElementById('iframe-container').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
